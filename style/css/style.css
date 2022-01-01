@@ -131,11 +131,25 @@ body {
   border-right: 0 solid grey;
   border-bottom: 0 solid grey;
   border-left: 0 solid grey;
-  transition: 1s linear;
+  position: relative;
+  transition: background-color 1s linear;
+  z-index: 100;
 }
-.brand:hover {
+.brand::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
   background: #fc466b;
   background: linear-gradient(320deg, #fc466b 20%, #c93ffb 86%);
+  opacity: 0;
+  transition: 1s linear;
+}
+.brand:hover::after {
+  opacity: 1;
 }
 
 .social {
@@ -149,11 +163,25 @@ body {
   border-right: 1px solid grey;
   border-bottom: 0 solid grey;
   border-left: 1px solid grey;
-  transition: 1s linear;
+  position: relative;
+  transition: background-color 1s linear;
+  z-index: 100;
 }
-.social:hover {
+.social::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
   background: #fc466b;
   background: linear-gradient(43deg, #fc466b 20%, #fbbd3f 86%);
+  opacity: 0;
+  transition: 1s linear;
+}
+.social:hover::after {
+  opacity: 1;
 }
 
 .website {
@@ -167,11 +195,25 @@ body {
   border-right: 0 solid grey;
   border-bottom: 1px solid grey;
   border-left: 0 solid grey;
-  transition: 1s linear;
+  position: relative;
+  transition: background-color 1s linear;
+  z-index: 100;
 }
-.website:hover {
+.website::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
   background: #fc466b;
   background: linear-gradient(133deg, #fc466b 13%, #3ffbe2 95%);
+  opacity: 0;
+  transition: 1s linear;
+}
+.website:hover::after {
+  opacity: 1;
 }
 
 .video {
@@ -185,11 +227,25 @@ body {
   border-right: 1px solid grey;
   border-bottom: 1px solid grey;
   border-left: 1px solid grey;
-  transition: 1s linear;
+  position: relative;
+  transition: background-color 1s linear;
+  z-index: 100;
 }
-.video:hover {
+.video::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
   background: #fc466b;
   background: linear-gradient(170deg, #fc466b 36%, #3ffbe2 95%);
+  opacity: 0;
+  transition: 1s linear;
+}
+.video:hover::after {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
