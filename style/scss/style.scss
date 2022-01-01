@@ -41,9 +41,9 @@ body{
 // Section Left
 .section.left{
     border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
     display: flex;
     flex-direction: column;
-    background-color: green;
     padding-left: 60px;
     padding-top: 60px;
     row-gap: 80px;
@@ -110,12 +110,79 @@ body{
     }
 
     i{
-        font-size: 0.8rem;
-        color: $primary-clr;
-        padding: 3px;
-        border-radius: 50%;
-        border: 1px solid $primary-clr;
+        @include iconFleche;
     }
 }
 // End Section Left
+
+// Section Right
+.section.right{
+    // background-color: green;
+
+    .grid{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "brand social"
+        "website video"
+        ;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        h2{
+            font-size: 3.2rem;
+            font-family: $primary-font;
+            color: $primary-clr;
+        }
+
+        i{
+            @include iconFleche;
+        }
+    }
+}
+
+.brand{
+    grid-area: brand;
+    @include gridItems(0, 0, 0, 0);
+
+    &:hover{
+        background: rgb(252,70,107);
+        background: linear-gradient(320deg, rgba(252,70,107,1) 20%, rgba(201,63,251,1) 86%);
+    }
+}
+
+.social{
+    grid-area: social;
+    @include gridItems(0, 1px, 0, 1px);
+
+    &:hover{
+        background: rgb(252,70,107);
+        background: linear-gradient(43deg, rgba(252,70,107,1) 20%, rgba(251,189,63,1) 86%);
+    }
+}
+
+.website{
+    grid-area: website;
+    @include gridItems(1px, 0, 1px, 0);
+
+    &:hover{
+        background: rgb(252,70,107);
+        background: linear-gradient(133deg, rgba(252,70,107,1) 13%, rgba(63,251,226,1) 95%);
+    }
+}
+
+.video{
+    grid-area: video;
+    @include gridItems(1px, 1px, 1px, 1px);
+
+    &:hover{
+        background: rgb(252,70,107);
+        background: linear-gradient(170deg, rgba(252,70,107,1) 36%, rgba(63,251,226,1) 95%);
+    }
+}
+// End Section Right
+
 

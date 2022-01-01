@@ -26,9 +26,9 @@ body {
 
 .section.left {
   border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
   display: flex;
   flex-direction: column;
-  background-color: green;
   padding-left: 60px;
   padding-top: 60px;
   row-gap: 80px;
@@ -95,6 +95,101 @@ body {
   padding: 3px;
   border-radius: 50%;
   border: 1px solid white;
+}
+
+.section.right .grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "brand social" "website video";
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.section.right .grid h2 {
+  font-size: 3.2rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.section.right .grid i {
+  font-size: 0.8rem;
+  color: white;
+  padding: 3px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.brand {
+  grid-area: brand;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #0f0f0f;
+  padding: 30px;
+  border-top: 0 solid grey;
+  border-right: 0 solid grey;
+  border-bottom: 0 solid grey;
+  border-left: 0 solid grey;
+  transition: 1s linear;
+}
+.brand:hover {
+  background: #fc466b;
+  background: linear-gradient(320deg, #fc466b 20%, #c93ffb 86%);
+}
+
+.social {
+  grid-area: social;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #0f0f0f;
+  padding: 30px;
+  border-top: 0 solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 0 solid grey;
+  border-left: 1px solid grey;
+  transition: 1s linear;
+}
+.social:hover {
+  background: #fc466b;
+  background: linear-gradient(43deg, #fc466b 20%, #fbbd3f 86%);
+}
+
+.website {
+  grid-area: website;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #0f0f0f;
+  padding: 30px;
+  border-top: 1px solid grey;
+  border-right: 0 solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 0 solid grey;
+  transition: 1s linear;
+}
+.website:hover {
+  background: #fc466b;
+  background: linear-gradient(133deg, #fc466b 13%, #3ffbe2 95%);
+}
+
+.video {
+  grid-area: video;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #0f0f0f;
+  padding: 30px;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  transition: 1s linear;
+}
+.video:hover {
+  background: #fc466b;
+  background: linear-gradient(170deg, #fc466b 36%, #3ffbe2 95%);
 }
 
 /*# sourceMappingURL=style.css.map */

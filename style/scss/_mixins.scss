@@ -3,3 +3,24 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin iconFleche {
+    font-size: 0.8rem;
+    color: $primary-clr;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid $primary-clr;
+}
+
+@mixin gridItems($borderTop, $borderRight, $borderBottom, $borderLeft) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: $background-clr;
+    padding: 30px;        
+    border-top: $borderTop solid grey;
+    border-right: $borderRight solid grey;
+    border-bottom: $borderBottom solid grey;
+    border-left: $borderLeft solid grey;
+    transition: 1s linear;
+}
