@@ -136,11 +136,29 @@ body{
             font-size: 3.2rem;
             font-family: $primary-font;
             color: $primary-clr;
+            transition: 0.8s ease-in;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: "View";
+                left: 0;
+                bottom: 0;
+                top: 50px
+            }
         }
 
         i{
             @include iconFleche;
         }
+    }
+
+    .item-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
     }
 }
 

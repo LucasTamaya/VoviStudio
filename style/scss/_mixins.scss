@@ -14,7 +14,6 @@
 
 @mixin gridItems($borderTop, $borderRight, $borderBottom, $borderLeft, $bg-color, $bg-gradient) {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     background-color: $background-clr;
     padding: 30px;        
@@ -37,10 +36,18 @@
         background: $bg-color;
         background: $bg-gradient;
         opacity: 0;
-        transition: 1s linear;
+        transition: 0.8s ease-in;
     }
 
     &:hover::after{
         opacity: 1;
+    }
+
+    &:hover{
+        .item-container{
+            h2{
+                transform: translateY(-50px);
+            }
+        }
     }
 }

@@ -111,6 +111,15 @@ body {
   font-size: 3.2rem;
   font-family: "Poppins", sans-serif;
   color: white;
+  transition: 0.8s ease-in;
+  position: relative;
+}
+.section.right .grid h2::after {
+  position: absolute;
+  content: "View";
+  left: 0;
+  bottom: 0;
+  top: 50px;
 }
 .section.right .grid i {
   font-size: 0.8rem;
@@ -119,11 +128,17 @@ body {
   border-radius: 50%;
   border: 1px solid white;
 }
+.section.right .item-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
 
 .brand {
   grid-area: brand;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   background-color: #0f0f0f;
   padding: 30px;
@@ -146,16 +161,18 @@ body {
   background: #fc466b;
   background: linear-gradient(320deg, #fc466b 20%, #c93ffb 86%);
   opacity: 0;
-  transition: 1s linear;
+  transition: 0.8s ease-in;
 }
 .brand:hover::after {
   opacity: 1;
+}
+.brand:hover .item-container h2 {
+  transform: translateY(-50px);
 }
 
 .social {
   grid-area: social;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   background-color: #0f0f0f;
   padding: 30px;
@@ -178,16 +195,18 @@ body {
   background: #fc466b;
   background: linear-gradient(43deg, #fc466b 20%, #fbbd3f 86%);
   opacity: 0;
-  transition: 1s linear;
+  transition: 0.8s ease-in;
 }
 .social:hover::after {
   opacity: 1;
+}
+.social:hover .item-container h2 {
+  transform: translateY(-50px);
 }
 
 .website {
   grid-area: website;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   background-color: #0f0f0f;
   padding: 30px;
@@ -210,16 +229,18 @@ body {
   background: #fc466b;
   background: linear-gradient(133deg, #fc466b 13%, #3ffbe2 95%);
   opacity: 0;
-  transition: 1s linear;
+  transition: 0.8s ease-in;
 }
 .website:hover::after {
   opacity: 1;
+}
+.website:hover .item-container h2 {
+  transform: translateY(-50px);
 }
 
 .video {
   grid-area: video;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   background-color: #0f0f0f;
   padding: 30px;
@@ -242,10 +263,13 @@ body {
   background: #fc466b;
   background: linear-gradient(170deg, #fc466b 36%, #3ffbe2 95%);
   opacity: 0;
-  transition: 1s linear;
+  transition: 0.8s ease-in;
 }
 .video:hover::after {
   opacity: 1;
+}
+.video:hover .item-container h2 {
+  transform: translateY(-50px);
 }
 
 /*# sourceMappingURL=style.css.map */
