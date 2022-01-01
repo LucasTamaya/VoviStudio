@@ -149,7 +149,7 @@ body {
   transition: 1s linear;
 }
 .brand:hover::after {
-  opacity: 12;
+  opacity: 1;
 }
 
 .social {
@@ -181,7 +181,7 @@ body {
   transition: 1s linear;
 }
 .social:hover::after {
-  opacity: 12;
+  opacity: 1;
 }
 
 .website {
@@ -213,7 +213,7 @@ body {
   transition: 1s linear;
 }
 .website:hover::after {
-  opacity: 12;
+  opacity: 1;
 }
 
 .video {
@@ -245,7 +245,7 @@ body {
   transition: 1s linear;
 }
 .video:hover::after {
-  opacity: 12;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
