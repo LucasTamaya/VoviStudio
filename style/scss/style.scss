@@ -147,41 +147,23 @@ body{
 .brand{
     grid-area: brand;
     @include gridItems(0, 0, 0, 0, rgb(252,70,107), linear-gradient(320deg, rgba(252,70,107,1) 20%, rgba(201,63,251,1) 86%));
-
-    // &:hover{
-    //     background: rgb(252,70,107);
-    //     background: linear-gradient(320deg, rgba(252,70,107,1) 20%, rgba(201,63,251,1) 86%);
-    // }
 }
 
 .social{
     grid-area: social;
     @include gridItems(0, 1px, 0, 1px,rgb(252,70,107),linear-gradient(43deg, rgba(252,70,107,1) 20%, rgba(251,189,63,1) 86%));
 
-    // &:hover{
-    //     background: rgb(252,70,107);
-    //     background: linear-gradient(43deg, rgba(252,70,107,1) 20%, rgba(251,189,63,1) 86%);
-    // }
+   
 }
 
 .website{
     grid-area: website;
     @include gridItems(1px, 0, 1px, 0, rgb(252,70,107), linear-gradient(133deg, rgba(252,70,107,1) 13%, rgba(63,251,226,1) 95%));
-
-    // &:hover{
-    //     background: rgb(252,70,107);
-    //     background: linear-gradient(133deg, rgba(252,70,107,1) 13%, rgba(63,251,226,1) 95%);
-    // }
 }
 
 .video{
     grid-area: video;
     @include gridItems(1px, 1px, 1px, 1px, rgb(252,70,107), linear-gradient(170deg, rgba(252,70,107,1) 36%, rgba(63,251,226,1) 95%));
-
-    // &:hover{
-    //     background: rgb(252,70,107);
-    //     background: linear-gradient(170deg, rgba(252,70,107,1) 36%, rgba(63,251,226,1) 95%);
-    // }
 }
 // End Section Right
 
