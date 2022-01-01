@@ -1,7 +1,121 @@
+// Import des fichiers SCSS
+@import "./variable";
+@import "./mixins";
+// End Import des fichiers SCSS
+
 // Reset css
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 // End Reset css
+
+// Body
+body{
+    max-width: 1400px;
+    height: 100vh;
+    background-color: $background-clr;
+}
+// End Body
+
+// Root
+:root{
+    font-size: 10px;
+}
+// End Root
+
+
+// Main
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+}
+// End Main
+
+// Section Left
+.section.left{
+    border-right: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    padding-left: 60px;
+    padding-top: 60px;
+    row-gap: 80px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+
+    .circle{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    a{
+        color: $primary-clr;
+        font-family: $primary-font;
+        font-size: 1.3rem;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 10px;
+
+        span{
+            font-family: $secondary-font;
+            font-size: 2rem;
+        }
+    }
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+
+    p{
+        color: $primary-clr;
+        font-size: 6.5rem;
+        font-family: $primary-font;
+        line-height: 75px;
+
+        span{
+            background: rgb(252,70,107);
+            background: linear-gradient(90deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 57%);            
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 25px;
+    border: 1px solid $primary-clr;
+    border-radius: 25px;
+    width: fit-content;
+    a{
+        font-size: 1.5rem;
+        color: $primary-clr;
+        font-family: $primary-font;
+    }
+
+    i{
+        font-size: 0.8rem;
+        color: $primary-clr;
+        padding: 3px;
+        border-radius: 50%;
+        border: 1px solid $primary-clr;
+    }
+}
+// End Section Left
+
